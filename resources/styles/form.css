@@ -38,7 +38,7 @@ form p {
   font-size: 1em; /* 14/16 */
   width: 100%;
   text-align: center;
-  margin: 0 0 0.75em;
+  padding: .25em 0 1.25em;
 
 }
 
@@ -49,8 +49,12 @@ label {
   font-weight: bold;
 }
 
-.subject label {
-  margin-top: 0.5em;
+.subject label:not(:first-of-type) {
+  margin-top: 1.25em;
+}
+
+.subject label:last-of-type {
+  margin-bottom: 0.5em;
 }
 
 label .subreason {
@@ -60,6 +64,10 @@ label .subreason {
   color: var(--pink-dk);
   font-size: .8em;
   text-transform: uppercase;
+}
+
+section {
+  padding-bottom: .5em;
 }
 
 /* TEXT INPUT STYLES */
@@ -83,6 +91,10 @@ input[type=text]:not(:last-of-type),
 input[type=tel]:not(:last-of-type),
 input[type=email]:not(:last-of-type) {
   margin-bottom: 0.75em;
+}
+
+input[type=email]:last-of-type {
+  margin-bottom: 0.5em;
 }
 
 input::placeholder {
