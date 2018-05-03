@@ -35,7 +35,7 @@ input[type=submit] {
 
 /* LABEL & TITLE STYLES */
 form p {
-  font-size: 0.875em; /* 14/16 */
+  font-size: 1em; /* 14/16 */
   width: 100%;
   text-align: center;
   margin: 0 0 0.75em;
@@ -45,7 +45,8 @@ form p {
 label {
   display: inline-block;
   font-size: 1em; /* 16/16 */
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--serif);
+  font-weight: bold;
 }
 
 .subject label {
@@ -54,6 +55,7 @@ label {
 
 label .subreason {
   display: block;
+  margin: 0.1em 0;
   padding-left: 2.125em;
   color: var(--pink-dk);
   font-size: .8em;
@@ -73,7 +75,7 @@ input[type=email] {
   border: 0.125em solid var(--gray-lt); /* 2/16 */
   background-color: #fff;
   color: #000;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--sans-serif);
   font-size: 1em; /* 16/16 */
 }
 
@@ -137,5 +139,5 @@ input[type=email]:hover:not(:focus)::placeholder {
 
 .subject input:checked {
   background-color: var(--pink-dk);
-  box-shadow: inset 0 0 0 0.125em var(--pink-lt);
+  box-shadow: inset 0 0 0 0.125em #fff;
 }

@@ -14,7 +14,11 @@ Last Edited: 4-27-2018
 */
 
 /* GLOBAL FONTS */
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento|Oswald');
+:root {
+  --serif: 'Quattrocento', serif;
+  --sans-serif: 'Oswald', sans-serif;
+}
 
 /* GLOBAL COLORS */
 :root {
