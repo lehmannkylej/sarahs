@@ -244,7 +244,7 @@ footer address {
 }
 
 footer img {
-  margin: .5em 0 .75em;
+  padding: .5em 0 .75em;
   width: 3.5em;
   height: 3.5em;
 }
