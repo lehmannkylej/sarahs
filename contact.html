@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<!--
+SARAH'S CAKE SHOP
+Contact Page
+
+Kyle Lehmann
+lehmannkylej@gmail.com
+Created: 4-23-2018
+
+Filename: template.html
+SUPPORTING FILES
+    HTML: index.html, cupcakes.html, cakes.html, weddings.html,
+          about.html
+    CSS: main.css, forms.css
+    Images: logo-simple.svg
+    JS: main.js
+Last Edited: 4-27-2018
+-->
+<head>
+  <meta charset="utf-8" />
+  <title>Contact Us</title>
+
+  <link href="./resources/styles/resources.css" rel="stylesheet" type="text/css" />
+  <link href="./resources/styles/main.css" rel="stylesheet" type="text/css" />
+  <link href="./resources/styles/form.css" rel="stylesheet" type="text/css" />
+  <script src="./resources/scripts/main.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <img src="resources\images\logo-simple.svg">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="cupcakes.html">CUPCAKES</a></li>
+      <li><a href="cakes.html">CAKES</a></li>
+      <li><a href="weddings.html">WEDDINGS</a></li>
+      <li><a class="active" href="contact.html">CONTACT US</a></li>
+      <li><a href="about.html">ABOUT US</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div class="card main form">
+      <h1>Contact Us</h1>
+      <form>
+        <section class="basicinfo">
+
+          <h2>Basic Information</h2>
+          <p>Please fill out all information we request so we can best serve you.</p>
+
+          <label for="firstname">First Name</label><br />
+          <input type="text" name="firstname"
+          placeholder="Your first name..."><br />
+          <label for="lastname">Last Name</label><br />
+          <input type="text" name="lastname"
+          placeholder="Your last name..."><br />
+          <label for="phone">Telephone Number</label><br />
+          <input type="tel" name="phone"
+          placeholder="(999) 999-9999"><br />
+          <label for="email">Email Address</label><br />
+          <input type="email" name="email"
+          placeholder="youremail@example.com"><br />
+
+        </section>
+        <section class="subject">
+          <h2>HOW CAN WE HELP YOU?</h2>
+          <p class="formhead">
+          We will use your response to ask you more information.</p>
+
+          <label>
+            <input type="radio" name="subject" value="customcake">
+            Custom Cake Inquiry<br />
+            <span class="subreason">Custom Cake Orders and Addon Desserts</span>
+          </label><br />
+          <label>
+            <input type="radio" name="subject" value="shopcake">
+            A Shop Order<br />
+            <span class="subreason">Predesigned Cakes &#8226; Cupcakes &#8226; Shop Desserts</span>
+          </label><br/>
+          <label>
+            <input type="radio" name="subject" value="shoporder">
+            Wedding Cake and Desserts
+          </label><br />
+          <label>
+            <input type="radio" name="subject" value="wedding">
+            Donation Requests
+          </label><br />
+          <label>
+            <input type="radio" name="subject" value="wedding">
+            Other
+          </label><br />
+
+        </section>
+        <section class="submit">
+          <input type="reset">
+          <input type="submit">
+        </section>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <address>
+      Sarah's Cake Shop<br />
+      110 Clarkson Wilson Centre<br />
+      Chesterfield, MO 63017<br />
+    </address>
+    <a href="tel:+1-636-728-1140">(636) 728-1140</a><br />
+    
+    <span class="copyright">
+      &copy;
+      <script>currentYear();</script>
+      Sarah's Cake Shop &#8226; All Rights Reserved
+    </span>
+  </footer>
+
+</body>
+
+</html>

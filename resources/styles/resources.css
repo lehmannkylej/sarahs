@@ -1,0 +1,26 @@
+/*
+SARAH'S CAKE SHOP
+Main Stylesheet
+
+Kyle Lehmann
+lehmannkylej@gmail.com
+Created: 4-23-2018
+
+Filename: main.css
+SUPPORTING FILES
+    WEBFONTS: Merriwetaher, Oswald
+
+Last Edited: 4-27-2018
+*/
+
+/* GLOBAL FONTS */
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald');
+
+/* GLOBAL COLORS */
+:root {
+  --pink-lt: #FFE1EB;
+  --pink-md: #E3B5D4;
+  --pink-dk: #CC5987;
+  --gray-lt: #C8CFD7;
+  --gray-dk: #687D8C;
+}
