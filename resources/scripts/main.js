@@ -12,6 +12,16 @@ SUPPORTING FILES: N/A
 Last Edited: 4-27-2018
 */
 
+//NAV HAMBURGER MENU
+function navMenu() {
+    var x = document.getElementById("nav");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
+
 //CURRENT YEAR
 function currentYear(){
   now = new Date
