@@ -14,17 +14,21 @@ SUPPORTING FILES
           about.html
     CSS: main.css, normalize.css, forms.css
     Images: logo-simple.svg, logo-fb.svg, logo-ig.svg
-    JS: main.js
+    JS: main.js, form.js
 Last Edited: 4-27-2018
 -->
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+
   <title>Contact Us</title>
+
   <link href="./resources/styles/normalize.css" rel="stylesheet" type="text/css" />
   <link href="./resources/styles/resources.css" rel="stylesheet" type="text/css" />
   <link href="./resources/styles/main.css" rel="stylesheet" type="text/css" />
   <link href="./resources/styles/form.css" rel="stylesheet" type="text/css" />
+
   <script src="./resources/scripts/main.js"></script>
+  <script src="./resources/scripts/form.js"></script>
 </head>
 
 <body>
@@ -48,54 +52,100 @@ Last Edited: 4-27-2018
     <div class="card main form">
       <h1>Contact Us</h1>
       <form>
-        <section class="basicinfo">
-
+        <section id="basicinfo">
           <h2>Basic Information</h2>
           <p>Please fill out all information we request so we can best serve you.</p>
 
           <label for="firstname">First Name</label><br />
           <input type="text" name="firstname"
-          placeholder="Your first name..."><br />
+          placeholder="Your first name..." required><br />
           <label for="lastname">Last Name</label><br />
           <input type="text" name="lastname"
-          placeholder="Your last name..."><br />
+          placeholder="Your last name..." required><br />
           <label for="phone">Telephone Number</label><br />
           <input type="tel" name="phone"
-          placeholder="(999) 999-9999"><br />
+          placeholder="(999) 999-9999" required><br />
           <label for="email">Email Address</label><br />
           <input type="email" name="email"
-          placeholder="youremail@example.com">
-
+          placeholder="youremail@example.com" required>
         </section>
-        <section class="subject">
+
+        <section id="subject">
           <h2>HOW CAN WE HELP YOU?</h2>
-          <p class="formhead">
-          We will use your response to ask you more information.</p>
+          <p>We will use your response to ask you more information.</p>
 
           <label>
-            <input type="radio" name="subject" value="customcake">
+            <input type="radio" name="subject" id="cake"
+            onclick="subCake()" required>
             Custom Cake Inquiry<br />
             <span class="subreason">Custom Cake Orders and Addon Desserts</span>
           </label><br />
           <label>
-            <input type="radio" name="subject" value="shopcake">
+            <input type="radio" name="subject" id="shop"
+            onclick="subShop()" required>
             A Shop Order<br />
             <span class="subreason">Predesigned Cakes &#8226; Cupcakes &#8226; Shop Desserts</span>
           </label><br/>
           <label>
-            <input type="radio" name="subject" value="shoporder">
+            <input type="radio" name="subject" id="wedding"
+            onclick="subWedding()" required>
             Wedding Cake and Desserts
           </label><br />
           <label>
-            <input type="radio" name="subject" value="wedding">
+            <input type="radio" name="subject" id="donate"
+            onclick="subDonate()" required>
             Donation Requests
           </label><br />
           <label>
-            <input type="radio" name="subject" value="wedding">
+            <input type="radio" name="subject" id="other"
+            onclick="subOther()" required>
             Other
           </label>
-
         </section>
+
+        <section id="moreInfo">
+          <h2>Additonal Information</h2>
+
+          <p id="cakeFormhead">Custom cakes are made by appointment. The minimum for an order including a custom cake is $150.00.</p>
+
+          <p id="shopFormhead">Shop orders include any In Store Desserts, Cupcakes, and Predesigned Cakes. If you need immediate assistance, please call or stop by so we can help you in a timely manner.</p>
+
+          <p id="weddingFormhead">Wedding cake consultations and tastings are by appointment only. For wedding information only, please call our Wedding Coordinator.</p>
+
+          <p id="donateFormhead">Sarah’s is a proud sponsor of the Leukemia & Lymphoma Society and Young Friends of Kids with Cancer.<br /><br />
+          We receive dozens of requests for charitable donations each month, and unfortunately we cannot contribute or even respond to them all. To be considered, we ask that you complete the online donation form below.  All inquiries must be received a month in advance.<br /><br />
+          Thank you for understanding.</p>
+
+          <p id="otherFormhead">We are sorry we couldn't assist you with one of our other options. Please provide information below so we can properly assist you.</p>
+
+          <label id="dateLabel" for="date">Event Date</label>
+          <input type="date" id="date" required>
+
+          <label id="donDateLabel" for="donDate">Donation Date</label>
+          <input type="date" id="donDate" required>
+
+          <label id="eventLabel" for="event">What type of event are you having?</label>
+          <input type="text" id="event" placeholder="Type of event..." required>
+
+          <label id="servingsLabel" for="servings">How many guests are you serving?</label>
+          <input type="text" id="servings" placeholder="Number of guests..." required>
+
+          <label id="itemsLabel" for="items">What items are you looking to order?</label>
+          <input type="text" id="items" placeholder="Items to order..." required>
+
+          <label id="addInfoLabel" for="addInfo">Please briefly describe your event.</label>
+          <textarea rows="3" id="addInfo" placeholder="Any additional info... (Colors, theme, formal/informal, etc.)" required></textarea>
+
+          <label id="orgNameLabel" for="orgName">Organization Name</label>
+          <input type="text" id="orgName" placeholder="Organization..." required>
+
+          <label id="taxIDLabel" for="taxID">Tax ID Number</label>
+          <input type="text" id="taxID" placeholder="Tax ID..." required>
+
+          <label id="descripLabel" for="descrip">Please describe what you're looking for below.</label>
+          <textarea rows="3" id="descrip" placeholder="Decription..." required></textarea>
+        </section>
+
         <section class="submit">
           <input type="reset">
           <input type="submit">

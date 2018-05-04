@@ -1,4 +1,4 @@
-/*
+./*
 SARAH'S CAKE SHOP
 Contact Form Stylesheet
 
@@ -49,11 +49,11 @@ label {
   font-weight: bold;
 }
 
-.subject label:not(:first-of-type) {
+#subject label:not(:first-of-type) {
   margin-top: 1.25em;
 }
 
-.subject label:last-of-type {
+#subject label:last-of-type {
   margin-bottom: 0.5em;
 }
 
@@ -73,12 +73,12 @@ section {
 /* TEXT INPUT STYLES */
 input[type=text],
 input[type=tel],
-input[type=email] {
-  height: 2em; /* 32/16 */
+input[type=email],
+input[type=date],
+textarea {
   box-sizing : border-box;
-  width: 100%;
-  margin-top: 0.25em;
-  padding: 1.125em 0.375em; /* 18/16 */ /* 6/16 */
+  margin: 0.25em 0 1em;
+  padding: .5em 0 .5em .5em; /* 18/16 */ /* 6/16 */
   border-radius: 0.25em; /* 4/16 */
   border: 0.125em solid var(--gray-lt); /* 2/16 */
   background-color: #fff;
@@ -87,53 +87,84 @@ input[type=email] {
   font-size: 1em; /* 16/16 */
 }
 
-input[type=text]:not(:last-of-type),
-input[type=tel]:not(:last-of-type),
-input[type=email]:not(:last-of-type) {
-  margin-bottom: 0.75em;
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea {
+  box-sizing : border-box;
+  width: 100%;
 }
 
 input[type=email]:last-of-type {
   margin-bottom: 0.5em;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: var(--gray-dk);
 }
 
-input:placeholder-shown {
+input:placeholder-shown,
+textarea:placeholder-shown {
   background-color: var(--gray-lt);
 }
 
 input[type=text]:focus,
 input[type=tel]:focus,
-input[type=email]:focus {
+input[type=email]:focus,
+input[type=date]:focus,
+textarea:focus {
   background-color: #fff;
   border-color: var(--pink-md);
 }
 
 input[type=text]:focus::placeholder,
 input[type=tel]:focus::placeholder,
-input[type=email]:focus::placeholder {
+input[type=email]:focus::placeholder,
+input[type=date]:focus::placeholder,
+textarea:focus::placeholder {
   color: var(--gray-lt);
 }
 
 
 input[type=text]:hover:not(:focus),
 input[type=tel]:hover:not(:focus),
-input[type=email]:hover:not(:focus) {
+input[type=email]:hover:not(:focus),
+input[type=date]:hover:not(:focus),
+textarea:hover:not(:focus) {
   background-color: var(--pink-lt);
   border-color: var(--pink-lt);
 }
 
 input[type=text]:hover:not(:focus)::placeholder,
 input[type=tel]:hover:not(:focus)::placeholder,
-input[type=email]:hover:not(:focus)::placeholder {
+input[type=email]:hover:not(:focus)::placeholder,
+input[type=date]:hover:not(:focus),
+textarea:hover:not(:focus)::placeholder {
   color: var(--pink-dk);
 }
 
+input[type=date] {
+  text-transform: uppercase;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  margin-right: .25em;
+  color: var(--pink-dk);
+  background: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+  background: none;
+}
+
 /* RADIO INPUT STYLES */
-.subject input {
+#subject input {
   -webkit-appearance: none;
 	background-color: #fff;
 	border: 0.125em solid var(--pink-dk); /* 2/16 */
@@ -145,11 +176,70 @@ input[type=email]:hover:not(:focus)::placeholder {
   margin-top: -0.25em; /* 4/16 */
 }
 
-.subject input:hover {
+#subject input:hover {
   background-color: var(--pink-md);
 }
 
-.subject input:checked {
+#subject input:checked {
   background-color: var(--pink-dk);
   box-shadow: inset 0 0 0 0.125em #fff;
+}
+
+/* ADDITONAL INFO STYLES */
+#moreInfo {
+  display: none;
+}
+
+#cakeFormhead {
+  display: none;
+  margin-bottom: 0;
+}
+
+#shopFormhead {
+  display: none;
+  margin-bottom: 0;
+}
+
+#weddingFormhead {
+  display: none;
+  margin-bottom: 0;
+}
+
+#donateFormhead {
+  display: none;
+  margin-bottom: 0;
+}
+
+#otherFormhead {
+  display: none;
+  margin-bottom: 0;
+}
+
+#date {
+  display: none;
+}
+
+#event {
+  display: none;
+}
+
+#servings {
+  display: none;
+}
+
+#items {
+  display: none;
+}
+
+
+#addInfo {
+  display: none;
+}
+
+#orgName {
+  display: none;
+}
+
+#descrip {
+  display: none;
 }
