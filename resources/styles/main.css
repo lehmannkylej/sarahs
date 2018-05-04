@@ -234,7 +234,7 @@ nav {
 }
 
 nav a {
-  float: right;
+  display: inline-block;
   font-family: var(--sans-serif);
   font-size: 1.125em;
   margin: 0 .25em;
@@ -270,6 +270,12 @@ nav .icon {
 
 .close {
   display: none;
+  font-size: 1.5em;
+  font-family: var(--sans-serif);
+}
+
+.navLinks {
+  float: right;
 }
 
 .dropLinks a {
@@ -311,6 +317,9 @@ nav .icon {
   nav.responsive #crown {
     display: none;
   }
+  nav.responsive .navLinks {
+    float: none;
+  }
   nav.responsive a {
     font-size: 1.35em;
     display: block;
@@ -331,7 +340,6 @@ nav .icon {
 
   nav.responsive .close {
     display: block;
-    font-size: 1.5em;
   }
 
   nav.responsive .dropdown {
