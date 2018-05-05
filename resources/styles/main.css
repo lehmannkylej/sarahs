@@ -45,22 +45,33 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   background-color: var(--gray-lt);
-  padding: 0.75em;
+  padding: 1.5em;
   overflow: hidden;
-  clear: both;
+}
+
+body > .content {
+  text-align: center;
 }
 
 .card {
   background-color: #fff;
   border-radius: 0.25em;
   box-shadow: 0 0.0625em 0.1875em rgba(0,0,0,0.12), 0 0.0625em 0.125em rgba(0,0,0,0.24);
-  padding: 1.5em 1.5em .5em; /* 24/16 */
-  margin: 1.125em; /* 18/16 */
+  padding: 1.5em; /* 24/16 */
+  margin: .5em; /* 18/16 */
+  max-width: 36em;
+  text-align: left;
 }
 
 .main {
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.side {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 20em;
 }
 
 section:not(:last-of-type) {
@@ -77,16 +88,19 @@ aside {
   border: 0.125em solid var(--pink-md); /* 2/16 */
   padding: 0.5em; /* 6/16 */
   display: inline-block;
-  margin: 0.5em 0 0.5em; /* 8/16 */
+  margin: 0.5em 0; /* 8/16 */
+  width:100%;
   font-family: var(--sans-serif);
   font-size: 1em; /* 16/16 */
 }
 
 /* RESPONSIVE LAYOUT */
-@media only screen and (min-width: 37.5em) {/* 600/16 */
-  div.main {
-    width: 34.375em; /* 550/16 */
+@media only screen and (min-width: 46em) {/* 600/16 */
+  div.content {
+
   }
+
+
   div:has(> aside) {
 
   }
@@ -251,7 +265,7 @@ nav a.active {
 }
 
 /* MOBILE DROPDOWN */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 46em) {
   nav a {
     display: none;
   }
@@ -262,7 +276,7 @@ nav a.active {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 46em) {
   nav.responsive {
     overflow: none;
   }
