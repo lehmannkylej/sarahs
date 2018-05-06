@@ -409,7 +409,7 @@ aside figcaption {
 }
 
 .slideshow figcaption {
-  margin: .5em .25em .25em;
+  margin: .5em .25em 0;
 }
 
 
