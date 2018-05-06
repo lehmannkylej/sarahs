@@ -71,7 +71,7 @@ header img {
 nav {
   padding: .5em;
   background-color: var(--pink-lt);
-  z-index: 5;
+  z-index: 6;
   box-shadow: var(--shadow-heavy);
 }
 
@@ -199,7 +199,7 @@ body {
   text-align: left;
   display: block;
   vertical-align: top;
-  z-index: 5;
+  z-index: 7;
 }
 .card:not(:first-of-type) {
   margin-top: .75em;
@@ -228,7 +228,7 @@ aside {
   width:100%;
   font-family: var(--sans-serif);
   font-size: 1em;
-  z-index: 6;
+  z-index: 8;
 }
 .asideImg {
   padding: 0.25em;
