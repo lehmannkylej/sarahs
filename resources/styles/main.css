@@ -284,7 +284,7 @@ footer img {
   aside {
     float: right;
     max-width: 10em; /* 150/16 */
-    margin: 0 0 0.5em 0.5em; /* 12/16 */
+    margin: .5em 0 0.5em 0.5em; /* 12/16 */
   }
 
   .asideImg {
