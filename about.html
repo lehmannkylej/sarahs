@@ -20,9 +20,24 @@ Last Edited: 4-27-2018
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
   <title>About Us</title>
+
+  <!-- SITE FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./resources/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="./resources/images/icons/site.webmanifest">
+  <link rel="mask-icon" href="./resources/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./resources/images/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./resources/images/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- STYLESHEETS -->
   <link href="./resources/styles/normalize.css" rel="stylesheet" type="text/css" />
   <link href="./resources/styles/resources.css" rel="stylesheet" type="text/css" />
   <link href="./resources/styles/main.css" rel="stylesheet" type="text/css" />
+
+  <!-- JAVASCRIPT -->
   <script src="./resources/scripts/main.js"></script>
 </head>
 
@@ -38,130 +53,32 @@ Last Edited: 4-27-2018
       <a href="index.html">Home</a>
       <a href="cupcakes.html">Cupcakes</a>
       <a href="cakes.html">Cakes</a>
-      <a class="active" href="weddings.html">Weddings</a>
+      <a href="weddings.html">Weddings</a>
       <a href="contact.html">Contact Us</a>
-      <a href="about.html">About Us</a>
+      <a class="active" href="about.html">About Us</a>
       <a href="javascript:void(0);" class="close" onclick="navMenu()" >&#10006;&#xFE0E;</a>
       <a href="javascript:void(0);" class="hamburger" onclick="navMenu()">&#9776;</a>
     </div>
   </nav>
 
-  <div class="banner fitToParent" id="indexBanner">
+  <div class="banner fitToParent" id="aboutBanner">
     <div class="card fitToParent">
-      <h1>H1 - PAGE TITLE</h1>
-
-      <section>
-        <h2>H2 - SECTION TITLE</h2>
-        <article>
-          <p>Ut non est pulvinar, interdum eros vel, consectetur elit.</p>
-        </article>
-
+        <h1>ABOUT US</h1>
+          <p>Sarah’s is a locally-owned business that was established in 2003.  What began as a small café & catering company in Wildwood, Missouri, turned into a specialized dessert destination.</p>
+          <p>In 2010, Sarah’s made the move to Chesterfield, Missouri, and focused more on custom cakes, desserts, and cupcakes. At that time, we also added St. Louis' first dessert truck to our family. 2015 brought on more expansion and the need for a second dessert truck.</p>
+          <p>While the sweeter side of the business continued to grow, we never lost our passion for our small café roots, so in 2016 we decided to bring our extensive dessert and updated café menus to historic Old Towne Eureka, Missouri.</p>
         <form action="contact.html" class="contactbtn">
           <input type="submit" value="CONTACT US" />
         </form>
-        <a class="bignum" href="tel:+1-636-728-1140">(636) 728-1140</a>
-
-      </section>
     </div>
   </div>
 
   <div class="content fitToParent">
     <div class="card fitToParent">
-      <section>
-        <h2>H2 - SECTION TITLE</h2>
-
-
-        <aside class="fitToParent">This is an aside. Nunc efficitur interdum tempus. Nam in quam at orci maximus porta.</aside>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lacus non nisl lacinia, vitae finibus sem commodo. Aenean pretium ante quis pulvinar auctor.</p>
-
-        <article>
-          <h3>H3 - ARTICLE TITLE</h3>
-          <p>Ut non est pulvinar, interdum eros vel, consectetur elit.</p>
-        </article>
-
-      </section>
-
-      <section>
-        <h2>H2 - SECTION TITLE</h2>
-
-        <table>
-          <tr>
-            <th>Table Head</th>
-            <th>Table Head</th>
-          </tr>
-          <tr>
-            <td>Table Content Goes Here<br />
-                Second Line</td>
-            <td>More Table Content</td>
-          </tr>
-          <tr>
-            <td>Table Content Box</td>
-            <td>Table Content<br />
-                Another Line</td>
-          </tr>
-          <tr>
-            <td>Table Content Goes Here<br />
-                Second Line</td>
-            <td>More Table Content</td>
-          </tr>
-        </table>
-
-        <aside class="asideImg fitToParent">
-          <img src="./resources/images/template/aside1.jpg">
-          <figcaption>IMG Caption (figcaption)</figcaption>
-        </aside>
-
-        <ul>
-          <li><h3>H3 - List Item</h3>
-            <h4>$3.99 (H4 - PRICE)</h4>
-            Item description.
-          </li>
-          <li><h3>H3 - List Item</h3>
-            <h4>$3.99 (H4 - PRICE)</h4>
-            Item description.
-          </li>
-          <li><h3>H3 - List Item</h3>
-            <h4>$3.99 (H4 - PRICE)</h4>
-            Item description.
-          </li>
-          <li><h3>H3 - List Item</h3>
-            <h4>$3.99 (H4 - PRICE)</h4>
-            Item description.
-          </li>
-          <li><h3>H3 - List Item</h3>
-            <h4>$3.99 (H4 - PRICE)</h4>
-            Item description.
-          </li>
-      </section>
-    </div>
-
-    <div class="card imgGrid noSelect fitToParent">
-      <div class="imgGrid fitToParent">
-        <div class="gridItem"><img src="./resources/images/template/cake1.jpg">
-          <figcaption>1</figcaption></div>
-        <div class="gridItem"><img src="./resources/images/template/cake2.jpg">
-          <figcaption>2</figcaption></div>
-        <div class="gridItem"><img src="./resources/images/template/cake3.jpg">
-          <figcaption>3</figcaption></div>
-        <div class="gridItem"><img src="./resources/images/template/cake4.jpg">
-          <figcaption>4</figcaption></div>
-        <div class="gridItem"><img src="./resources/images/template/cake5.jpg">
-          <figcaption>5</figcaption></div>
-        <div class="gridItem"><img src="./resources/images/template/cake6.jpg">
-          <figcaption>6</figcaption></div>
-        <div class="gridItem"><img src="./resources/images/template/cake7.jpg">
-          <figcaption>7</figcaption></div>
-        <div class="gridItem"><img src="./resources/images/template/cake8.jpg">
-          <figcaption>8</figcaption></div>
-        <div class="gridItem"><img src="./resources/images/template/cake9.jpg">
-          <figcaption>9</figcaption></div>
-        <div class="gridItem"><img src="./resources/images/template/cake10.jpeg">
-          <figcaption>10</figcaption></div>
-        <div class="gridItem"><img src="./resources/images/template/cake11.jpg">
-          <figcaption>11</figcaption></div>
-        <div class="gridItem"><img src="./resources/images/template/cake12.jpg">
-          <figcaption>12</figcaption></div>
-      </div>
+      <h2>Jill Umbarger</h2>
+      <h3 class="jobTitle">Business Owner</h3>
+      <h4 class="jobLabel">Work Email</h4>
+      <a class="jobContact" href="email:sarahscafe@sbcglobal.net">sarahscafe@sbcglobal.net</a>
     </div>
   </div>
 
@@ -187,7 +104,7 @@ Last Edited: 4-27-2018
       Sarah's Cake Shop &#8226; All Rights Reserved
     </span>
   </footer>
-  
+
 </body>
 
 </html>

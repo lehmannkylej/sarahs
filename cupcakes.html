@@ -20,9 +20,24 @@ Last Edited: 4-27-2018
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Cupcakes</title>
+
+  <!-- SITE FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./resources/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="./resources/images/icons/site.webmanifest">
+  <link rel="mask-icon" href="./resources/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./resources/images/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./resources/images/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- STYLESHEETS -->
   <link href="./resources/styles/normalize.css" rel="stylesheet" type="text/css" />
   <link href="./resources/styles/resources.css" rel="stylesheet" type="text/css" />
   <link href="./resources/styles/main.css" rel="stylesheet" type="text/css" />
+
+  <!-- JAVASCRIPT -->
   <script src="./resources/scripts/main.js"></script>
 </head>
 
@@ -46,32 +61,25 @@ Last Edited: 4-27-2018
     </div>
   </nav>
 
-  <div class="content fitToParent">
+  <div id="cupcakesBanner" class="banner fitToParent">
     <div class="card fitToParent">
 
       <h1>CUPCAKES</h1>
-
-      <section>
-        <article>
-          <p>Sarah’s offers a variety of classic flavors as well as specialty flavors available daily in shop. We also offer customized orders to help you bring your creations to life!</p>
-        </article>
-
-        <form class="contactbtn" action="contact.html">
-          <input type="submit" value="CONTACT US TO ORDER" />
-        </form>
-        <a class="bignum" href="tel:+1-636-728-1140">(636) 728-1140</a>
-      </section>
+      <p>Sarah’s offers a variety of Classic Flavors available daily as well as Specialty Flavors available each day of the week in shop. We also offer customized orders to help you bring your creations to life!</p>
     </div>
+  </div>
+
+  <div class="content fitToParent">
 
     <div class="card fitToParent">
       <section>
         <h2>Specialty Cupcakes</h2>
         <p>When ordering from our daily rotating menu, please choose from the cupcakes available the day you are picking up your order.</p>
-        <p>Cupcakes can be ordered in any flavor combination of your choice from the Classic Cupcakes and the Daily Specialty cupcakes available on your order pick up day. Other specialty flavor cupcakes available for a minimum of 1 dozen or more.</p>
+        <p>Cupcakes can be ordered in any combonation and amount from the Classic Flavors and the Daily Flavors available on your order pick up day. Flavors from a different day can be ordered for a minimum of 1 dozen or more.</p>
       </section>
 
       <section>
-        <h2>Everyday Flavors</h2>
+        <h2>Classic Flavors</h2>
         <ul>
           <li><h3>Snack Cake</h3>
             <h4>$2.75/each, $33.00/dozen</h4>
@@ -93,6 +101,7 @@ Last Edited: 4-27-2018
             <h4>$2.75/each, $33.00/dozen</h4>
             Chocolate or yellow cake topped with our sweet decorators frosting in a fun design.
           </li>
+        </ul>
       </section>
       <section>
         <h2>Tuesday Flavors</h2>
@@ -135,7 +144,7 @@ Last Edited: 4-27-2018
           </li>
           <li><h3>Lemon Cream</h3>
             <h4>$2.75/each, $33.00/dozen</h4>
-            Lemon cake topped with lemon buttercream
+            Lemon cake topped with lemon buttercream.
           </li>
         </ul>
       </section>
@@ -145,11 +154,11 @@ Last Edited: 4-27-2018
         <ul>
           <li><h3>Salted Caramel</h3>
             <h4>$2.75/each, $33.00/dozen</h4>
-            White cake speckled with rainbow sprinkles, iced in white chocolate buttercream, and adorned with rainbow sprinkles like the childhood favorite
+            White cake speckled with rainbow sprinkles, iced in white chocolate buttercream, and adorned with rainbow sprinkles like the childhood favorite.
           </li>
           <li><h3>Date Night</h3>
             <h4>$2.75/each, $33.00/dozen</h4>
-            Caramel cake brushed with caramel, topped with caramel buttercream with & sprinkled with sea salt
+            Almond cake filled with chocolate ganache and topped with strawberry buttercream.
           </li>
           <li><h3>Boozy Bites</h3>
             <h4>$2.75/each, $33.00/dozen</h4>
@@ -167,11 +176,11 @@ Last Edited: 4-27-2018
           </li>
           <li><h3>Cinnamon Roll</h3>
             <h4>$2.75/each, $33.00/dozen</h4>
-            Cinnamon & spice-swirled white velvet cake, brushed with sweet cream, and iced in a spice-striped swirl of cream cheese frosting
+            Cinnamon & spice-swirled white velvet cake, brushed with sweet cream, and iced in a spice-striped swirl of cream cheese frosting.
           </li>
           <li><h3>Texas Sheetcake</h3>
             <h4>$2.75/each, $33.00/dozen</h4>
-            Chocolate buttermilk cake filled with caramel-cocoa sauce, iced in caramel buttercream, drizzled in caramel-cocoa sauce, and sprinkled with salted pecans
+            Chocolate buttermilk cake filled with caramel-cocoa sauce, iced in caramel buttercream, drizzled in caramel-cocoa sauce, and sprinkled with salted pecans.
           </li>
           <li><h3>Everyday Wedding Cake</h3>
             <h4>$2.75/each, $33.00/dozen</h4>
@@ -179,7 +188,65 @@ Last Edited: 4-27-2018
           </li>
         </ul>
       </section>
+    </div>
 
+    <div class="card fitToParent">
+      <h2>Ordering Custom Cupcakes</h2>
+      <section>
+        <article>
+          <p>Prices vary for custom designed cupcakes. This depends on the flavors and decoratin you choose.</p>
+          <p>Whether you’re hosting a birthday party, arranging a company function or planning a wedding, you can trust our experienced staff to provide you with desserts that you and your guests will never forget.</p>
+          <aside class="fitToParent">If you are looking to place a custom order, please contact us for more information and pricing.</aside>
+        </article>
+        <ul>
+          <li><h3>Basic Buttercream Swirl</h3>
+            <h4>$2.25/each, $27.00/dozen</h4>
+            Our basic cupcake is available in yellow, chocolate or white cake topped with a swirl of buttercream.
+          </li>
+          <li><h3>Mini Specialty Flavors</h3>
+            <h4>$1.50 - $.175/each, 1 DOZEN MINIMUM</h4>
+            A smaller version of our classic or specialty cupcakes. Available by order.
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="card imgGrid noSelect fitToParent">
+      <h2>Custom Cupcake Examples</h2>
+      <div class="imgGrid fitToParent">
+        <div class="gridItem">
+          <figcaption>1</figcaption>
+          <img src="./resources/images/cupcakes/cupcake1.jpg">
+        </div>
+        <div class="gridItem">
+          <figcaption>2</figcaption>
+          <img src="./resources/images/cupcakes/cupcake2.jpg">
+        </div>
+        <div class="gridItem">
+          <figcaption>3</figcaption>
+          <img src="./resources/images/cupcakes/cupcake3.jpg">
+        </div>
+        <div class="gridItem">
+          <figcaption>4</figcaption>
+          <img src="./resources/images/cupcakes/cupcake4.jpg">
+        </div>
+        <div class="gridItem">
+          <figcaption>5</figcaption>
+          <img src="./resources/images/cupcakes/cupcake5.jpg">
+        </div>
+        <div class="gridItem">
+          <figcaption>6</figcaption>
+          <img src="./resources/images/cupcakes/cupcake6.jpg">
+        </div>
+        <div class="gridItem">
+          <figcaption>7</figcaption>
+          <img src="./resources/images/cupcakes/cupcake7.jpg">
+        </div>
+        <div class="gridItem">
+          <figcaption>8</figcaption>
+          <img src="./resources/images/cupcakes/cupcake8.jpg">
+        </div>
+      </div>
     </div>
   </div>
 
