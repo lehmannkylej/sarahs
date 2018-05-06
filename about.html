@@ -32,39 +32,52 @@ Last Edited: 4-27-2018
     <img src="resources\images\logo-cakeshop.svg">
   </header>
 
-  <nav id="nav" class="noSelect fitToParent">
+  <nav id="nav" class="nav noSelect fitToParent">
     <a id="location" href="index.html">CHESTERFIELD, MO</a>
     <div class="navLinks">
       <a href="index.html">Home</a>
       <a href="cupcakes.html">Cupcakes</a>
       <a href="cakes.html">Cakes</a>
-      <a href="weddings.html">Weddings</a>
+      <a class="active" href="weddings.html">Weddings</a>
       <a href="contact.html">Contact Us</a>
-      <a class="active" href="about.html">About Us</a>
-      <a href="javascript:void(0);" class="close icon" onclick="navMenu()" >&#10006;&#xFE0E;</a>
-      <a href="javascript:void(0);" class="hamburger icon" onclick="navMenu()">&#9776;</a>
+      <a href="about.html">About Us</a>
+      <a href="javascript:void(0);" class="close" onclick="navMenu()" >&#10006;&#xFE0E;</a>
+      <a href="javascript:void(0);" class="hamburger" onclick="navMenu()">&#9776;</a>
     </div>
   </nav>
 
-  <div class="content">
-    <div class="card">
-
+  <div class="banner fitToParent" id="indexBanner">
+    <div class="card fitToParent">
       <h1>H1 - PAGE TITLE</h1>
 
       <section>
         <h2>H2 - SECTION TITLE</h2>
+        <article>
+          <p>Ut non est pulvinar, interdum eros vel, consectetur elit.</p>
+        </article>
 
-        <aside>This is an aside. Nunc efficitur interdum tempus. Nam in quam at orci maximus porta.</aside>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lacus non nisl lacinia, vitae finibus sem commodo. Aenean pretium ante quis pulvinar auctor.</p>
+        <form action="contact.html" class="contactbtn">
+          <input type="submit" value="CONTACT US" />
+        </form>
+        <a class="bignum" href="tel:+1-636-728-1140">(636) 728-1140</a>
+
+      </section>
+    </div>
+  </div>
+
+  <div class="content fitToParent">
+    <div class="card fitToParent">
+      <section>
+        <h2>H2 - SECTION TITLE</h2>
+
+
+        <aside class="fitToParent">This is an aside. Nunc efficitur interdum tempus. Nam in quam at orci maximus porta.</aside>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lacus non nisl lacinia, vitae finibus sem commodo. Aenean pretium ante quis pulvinar auctor.</p>
 
         <article>
           <h3>H3 - ARTICLE TITLE</h3>
           <p>Ut non est pulvinar, interdum eros vel, consectetur elit.</p>
         </article>
-
-        <form action="contact.html" style="text-align: center;">
-          <input type="submit" value="CONTACT US" />
-        </form>
 
       </section>
 
@@ -78,40 +91,82 @@ Last Edited: 4-27-2018
           </tr>
           <tr>
             <td>Table Content Goes Here<br />
-              Second Line</td>
-              <td>More Table Content</td>
-            </tr>
-            <tr>
-              <td>Table Content Box</td>
-              <td>Table Content<br />
+                Second Line</td>
+            <td>More Table Content</td>
+          </tr>
+          <tr>
+            <td>Table Content Box</td>
+            <td>Table Content<br />
                 Another Line</td>
-              </tr>
-              <tr>
-                <td>Table Content Goes Here<br />
-                  Second Line</td>
-                  <td>More Table Content</td>
-                </tr>
-              </table>
+          </tr>
+          <tr>
+            <td>Table Content Goes Here<br />
+                Second Line</td>
+            <td>More Table Content</td>
+          </tr>
+        </table>
+
+        <aside class="asideImg fitToParent">
+          <img src="./resources/images/template/aside1.jpg">
+          <figcaption>IMG Caption (figcaption)</figcaption>
+        </aside>
 
         <ul>
-          <li><h3>H3 - List Item 1</h3>
+          <li><h3>H3 - List Item</h3>
             <h4>$3.99 (H4 - PRICE)</h4>
             Item description.
           </li>
-          <li><h3>H3 - List Item 2</h3>
+          <li><h3>H3 - List Item</h3>
             <h4>$3.99 (H4 - PRICE)</h4>
             Item description.
           </li>
-          <li><h3>H3 - List Item 3</h3>
+          <li><h3>H3 - List Item</h3>
+            <h4>$3.99 (H4 - PRICE)</h4>
+            Item description.
+          </li>
+          <li><h3>H3 - List Item</h3>
+            <h4>$3.99 (H4 - PRICE)</h4>
+            Item description.
+          </li>
+          <li><h3>H3 - List Item</h3>
             <h4>$3.99 (H4 - PRICE)</h4>
             Item description.
           </li>
       </section>
     </div>
+
+    <div class="card imgGrid noSelect fitToParent">
+      <div class="imgGrid fitToParent">
+        <div class="gridItem"><img src="./resources/images/template/cake1.jpg">
+          <figcaption>1</figcaption></div>
+        <div class="gridItem"><img src="./resources/images/template/cake2.jpg">
+          <figcaption>2</figcaption></div>
+        <div class="gridItem"><img src="./resources/images/template/cake3.jpg">
+          <figcaption>3</figcaption></div>
+        <div class="gridItem"><img src="./resources/images/template/cake4.jpg">
+          <figcaption>4</figcaption></div>
+        <div class="gridItem"><img src="./resources/images/template/cake5.jpg">
+          <figcaption>5</figcaption></div>
+        <div class="gridItem"><img src="./resources/images/template/cake6.jpg">
+          <figcaption>6</figcaption></div>
+        <div class="gridItem"><img src="./resources/images/template/cake7.jpg">
+          <figcaption>7</figcaption></div>
+        <div class="gridItem"><img src="./resources/images/template/cake8.jpg">
+          <figcaption>8</figcaption></div>
+        <div class="gridItem"><img src="./resources/images/template/cake9.jpg">
+          <figcaption>9</figcaption></div>
+        <div class="gridItem"><img src="./resources/images/template/cake10.jpeg">
+          <figcaption>10</figcaption></div>
+        <div class="gridItem"><img src="./resources/images/template/cake11.jpg">
+          <figcaption>11</figcaption></div>
+        <div class="gridItem"><img src="./resources/images/template/cake12.jpg">
+          <figcaption>12</figcaption></div>
+      </div>
+    </div>
   </div>
 
 
-  <footer>
+  <footer class="fitToParent">
     <address>
       Sarah's Cake Shop<br />
       110 Clarkson Wilson Centre<br />
@@ -132,7 +187,7 @@ Last Edited: 4-27-2018
       Sarah's Cake Shop &#8226; All Rights Reserved
     </span>
   </footer>
-
+  
 </body>
 
 </html>
