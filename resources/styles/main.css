@@ -70,7 +70,7 @@ body > .splash {
   background-color: #fff;
   border-radius: 0.25em;
   box-shadow: 0 0.0625em 0.1875em rgba(0,0,0,0.12), 0 0.0625em 0.125em rgba(0,0,0,0.24);
-  padding: 1.5em; /* 24/16 */
+  padding: 2em; /* 24/16 */
   margin: .5em auto; /* 18/16 */
   max-width: 40em;
   width: 100%;
@@ -86,11 +86,11 @@ body > .splash {
 
 section:not(:last-of-type) {
   border-bottom: 0.125em solid var(--gray-lt); /* 2/16 */
-  padding-bottom: .5em; /* 24/16 */
+  padding-bottom: 1.125em; /* 24/16 */
 }
 
 section:not(:first-of-type) {
-  padding-top: 1em; /* 16/16 */
+  padding-top: 1.125em; /* 16/16 */
 }
 
 aside {
@@ -217,6 +217,15 @@ input[type=submit]:hover {
   display: block;
   text-align: center;
   margin-top: 2.5em;
+}
+
+#audioReview {
+  margin-top: 2.5em;
+}
+
+#audioReview audio {
+  display: block;
+  width: 100%;
 }
 
 /*
@@ -411,14 +420,21 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
-  margin: 0.75em 0 0.25em; /* 12/16 */ /* 4/16 */
+h3,
+cite {
+  display: block;
   width: 100%;
+  margin: 0.75em 0 0.25em; /* 12/16 */ /* 4/16 */
   font-family: var(--serif);
   font-weight: bold;
   font-size: 1em; /* 16/16 */
+  font-style: normal;
+}
+
+h3 {
   text-transform: uppercase;
 }
+
 
 h4 {
   margin: 0 0 .25em; /* 12/16 */ /* 4/16 */
@@ -438,6 +454,7 @@ h4 {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 p,
