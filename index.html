@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <!--
 SARAH'S CAKE SHOP
@@ -14,7 +14,7 @@ SUPPORTING FILES
           contact.html, about.html
     CSS: main.css
     Images: logo-simple.svg, logo-fb.svg, logo-ig.svg
-    JS: main.js
+    JS: main.js, slideshow.js
 Last Edited: 4-27-2018
 -->
 <head>
@@ -26,13 +26,13 @@ Last Edited: 4-27-2018
   <script src="./resources/scripts/main.js"></script>
 </head>
 
-<body>
+<body class="fitToParent">
 
-  <header id="header">
-    <img src="resources\images\logo-cakeshop.svg">
+  <header id="header" class="noSelect fitToParent">
+    <img src="./resources/images/logo-cakeshop.svg">
   </header>
 
-  <nav id="nav">
+  <nav id="nav" class="nav noSelect fitToParent">
     <a id="location" href="index.html">CHESTERFIELD, MO</a>
     <div class="navLinks">
       <a class="active" href="index.html">Home</a>
@@ -46,18 +46,39 @@ Last Edited: 4-27-2018
     </div>
   </nav>
 
-  <div class="splash" id="indexSplash">
-    <div class="card">
+  <div id="indexBanner" class="banner fitToParent">
+    <div class="card slideshow fitToParent">
+      <div class="slide fitToParent">
+        <img class="fitToParent" src="./resources/images/index/slide1.jpeg" class="fitToParent">
+        <figcaption>Glitter Bites&trade;</figcaption>
+      </div>
+
+      <div class="slide fitToParent">
+        <img class="fitToParent" src="./resources/images/index/slide2.jpeg" class="fitToParent">
+        <figcaption>Groom's Cake</figcaption>
+      </div>
+
+      <div class="slide fitToParent">
+        <img class="fitToParent" src="./resources/images/index/slide3.jpeg" class="fitToParent">
+        <figcaption>Birthday Crumb Posh Cake</figcaption>
+      </div>
+
+      <div class="slide fitToParent">
+        <img class="fitToParent" src="./resources/images/index/slide4.jpeg" class="fitToParent">
+        <figcaption>Daily Design Cupcakes</figcaption>
+      </div>
+    </div>
+  </div>
+
+  <div class="content fitToParent">
+    <div class="card fitToParent">
       <h1>Chesterfield, Missouri</h1>
       <h2>Sarah's Cake Shop</h2>
       <section>
         <article>
           <p>Sarah’s is a locally owned business offering custom cakes, cupcakes, desserts and wedding cakes to the greater St. Louis, Missouri area.</p>
-
           <p>Our focus is on delicious desserts using only the best ingredients and complemented with excellent customer service.</p>
-
           <p>Whether you’re hosting a birthday party, arranging a company function or planning a wedding, you can trust our experienced staff to provide you with desserts that you and your guests will never forget.</p>
-
           <p>If you are looking for information regarding an order, please visit our contact page.</p>
         </article>
 
@@ -65,13 +86,10 @@ Last Edited: 4-27-2018
           <input type="submit" value="CONTACT US" />
         </form>
         <a class="bignum" href="tel:+1-636-728-1140">(636) 728-1140</a>
-
       </section>
     </div>
-  </div>
 
-  <div class="content">
-    <div class="card">
+    <div class="card fitToParent">
       <section id="reviews">
         <h2>Customer Testimonials</h2>
         <article>
@@ -95,7 +113,7 @@ Last Edited: 4-27-2018
   </div>
 
 
-  <footer>
+  <footer class="fitToParent">
     <address>
       Sarah's Cake Shop<br />
       110 Clarkson Wilson Centre<br />
@@ -117,6 +135,7 @@ Last Edited: 4-27-2018
     </span>
   </footer>
 
+  <script src="./resources/scripts/slideshow.js"></script>
 </body>
 
 </html>
