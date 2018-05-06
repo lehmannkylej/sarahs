@@ -40,16 +40,29 @@ body {
   background-color: #fff;
 }
 
-.content {
+.content,
+.splash {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  background-color: var(--gray-lt);
   padding: 1.5em;
   overflow: hidden;
 }
 
-body > .content {
+.content {
+  background-color: var(--gray-lt);
+  position: relative;
+  width: 100%;
+  z-index: 4;
+  box-shadow: 0 -0.0625em 0.1875em rgba(0,0,0,0.12), 0 -0.0625em 0.125em rgba(0,0,0,0.24);
+}
+
+.splash {
+  z-index: 3;
+}
+
+body > .content,
+body > .splash {
   text-align: center;
 }
 
@@ -58,20 +71,17 @@ body > .content {
   border-radius: 0.25em;
   box-shadow: 0 0.0625em 0.1875em rgba(0,0,0,0.12), 0 0.0625em 0.125em rgba(0,0,0,0.24);
   padding: 1.5em; /* 24/16 */
-  margin: .5em; /* 18/16 */
-  max-width: 36em;
+  margin: .5em auto; /* 18/16 */
+  max-width: 40em;
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   text-align: left;
-}
-
-.main {
-  display: inline-block;
+  display: block;
   vertical-align: top;
-}
-
-.side {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 20em;
+  z-index: 5;
 }
 
 section:not(:last-of-type) {
@@ -88,30 +98,55 @@ aside {
   border: 0.125em solid var(--pink-md); /* 2/16 */
   padding: 0.5em; /* 6/16 */
   display: inline-block;
-  margin: 0.5em 0; /* 8/16 */
+  margin: 0.5em 0 0.25em 0; /* 8/16 */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
   width:100%;
   font-family: var(--sans-serif);
   font-size: 1em; /* 16/16 */
 }
 
+.asideImg {
+  border-color: var(--gray-lt);
+  background-color: #fff;
+  border-radius: .25em;
+  padding: 0.25em;
+}
+
+.asideImg img {
+  border-radius: .25em;
+  width: 100%;
+  margin: 0 0 0.5em 0;
+  height: auto;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
 /* RESPONSIVE LAYOUT */
 @media only screen and (min-width: 46em) {/* 600/16 */
-  div.content {
+  div.content,
+  div.splash {
 
   }
 
-
-  div:has(> aside) {
-
-  }
   aside {
     float: right;
-    max-width: 9.375em; /* 150/16 */
+    max-width: 10em; /* 150/16 */
     margin-left: 0.75em; /* 12/16 */
+  }
+
+  .asideImg {
+    max-width: 18em;
   }
 }
 
 /* ADDITONAL ELEMENT STYLES */
+.icon {
+  font-family:
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -180,8 +215,18 @@ input[type=submit]:hover {
 
 .contactbtn {
   display: block;
-  margin-top: .75em;
   text-align: center;
+  margin-top: 2.5em;
+}
+
+/*
+============
+IMAGE STYLES
+============
+*/
+.splash {
+  background: url("../images/index/splash1.jpeg") no-repeat center;
+  background-size: cover;
 }
 
 /*
@@ -204,8 +249,8 @@ header {
 }
 
 header img {
-  height: 3.125em;
-  margin: 0.375em auto 0.375em;
+  height: 6em;
+  margin: 0.375em auto;
   display: block;
 }
 
@@ -223,6 +268,7 @@ nav {
   z-index: 5;
   box-shadow: 0 0.0625em 0.1875em rgba(0,0,0,0.12), 0 0.0625em 0.125em rgba(0,0,0,0.24);
 }
+
 
 /* NAV LINKS & ELEMENTS */
 nav a {
@@ -383,6 +429,12 @@ h4 {
   text-transform: uppercase;
 }
 
+.asideImg h4,
+.imgGrid h4 {
+  text-transform: none;
+  text-align: center;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -418,4 +470,50 @@ a {
   font-size: 1.5em; /* 24/16 */
   font-weight: normal;
   text-transform: uppercase;
+}
+
+/*
+=====================
+RESPONSIVE IMAGE GRID
+=====================
+*/
+
+.imgGrid {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.gridItem {
+  width: 25%;
+  padding: .25em;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.gridItem img {
+  border-radius: 0.125em;
+  border: 2px solid #fff;
+  padding: 0;
+  margin: 0 0 .25em 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+  z-index: 6;
+}
+
+/*
+.gridItem img:hover {
+  opacity: 0.75;
+}
+*/
+
+@media screen and (max-width: 46em) {
+  .gridItem {
+    width: 50%;
+  }
 }

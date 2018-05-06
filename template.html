@@ -13,7 +13,7 @@ SUPPORTING FILES
     HTML: index.html, cupcakes.html, cakes.html, weddings.html,
           contact.html, about.html
     CSS: main.css, normalize.css
-    Images: logo-simple.svg, logo-fb.svg, logo-ig.svg
+    Images: logo-cakeshop.svg, logo-fb.svg, logo-ig.svg
     JS: main.js
 Last Edited: 4-27-2018
 -->
@@ -28,8 +28,8 @@ Last Edited: 4-27-2018
 
 <body>
 
-  <header>
-    <img src="resources\images\logo-simple.svg">
+  <header id="header">
+    <img src="resources\images\logo-cakeshop.svg">
   </header>
 
   <nav id="nav">
@@ -41,30 +41,43 @@ Last Edited: 4-27-2018
       <a href="weddings.html">Weddings</a>
       <a href="contact.html">Contact Us</a>
       <a href="about.html">About Us</a>
-      <a href="javascript:void(0);" class="close" onclick="navMenu()" >&#10006;&#xFE0E;</a>
-      <a href="javascript:void(0);" class="hamburger" onclick="navMenu()">&#9776;</a>
+      <a href="javascript:void(0);" class="close icon" onclick="navMenu()" >&#10006;&#xFE0E;</a>
+      <a href="javascript:void(0);" class="hamburger icon" onclick="navMenu()">&#9776;</a>
     </div>
   </nav>
 
-  <div class="content">
-    <div class="card main">
-
+  <div class="splash" id="indexSplash">
+    <div class="card">
       <h1>H1 - PAGE TITLE</h1>
 
       <section>
         <h2>H2 - SECTION TITLE</h2>
+        <article>
+          <p>Ut non est pulvinar, interdum eros vel, consectetur elit.</p>
+        </article>
+
+        <form action="contact.html" class="contactbtn">
+          <input type="submit" value="CONTACT US" />
+        </form>
+        <a class="bignum" href="tel:+1-636-728-1140">(636) 728-1140</a>
+
+      </section>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="card">
+      <section>
+        <h2>H2 - SECTION TITLE</h2>
 
         <aside>This is an aside. Nunc efficitur interdum tempus. Nam in quam at orci maximus porta.</aside>
+
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lacus non nisl lacinia, vitae finibus sem commodo. Aenean pretium ante quis pulvinar auctor.</p>
 
         <article>
           <h3>H3 - ARTICLE TITLE</h3>
           <p>Ut non est pulvinar, interdum eros vel, consectetur elit.</p>
         </article>
-
-        <form action="contact.html" style="text-align: center;">
-          <input type="submit" value="CONTACT US" />
-        </form>
 
       </section>
 
@@ -78,37 +91,78 @@ Last Edited: 4-27-2018
           </tr>
           <tr>
             <td>Table Content Goes Here<br />
-              Second Line</td>
-              <td>More Table Content</td>
-            </tr>
-            <tr>
-              <td>Table Content Box</td>
-              <td>Table Content<br />
+                Second Line</td>
+            <td>More Table Content</td>
+          </tr>
+          <tr>
+            <td>Table Content Box</td>
+            <td>Table Content<br />
                 Another Line</td>
-              </tr>
-              <tr>
-                <td>Table Content Goes Here<br />
-                  Second Line</td>
-                  <td>More Table Content</td>
-                </tr>
-              </table>
+          </tr>
+          <tr>
+            <td>Table Content Goes Here<br />
+                Second Line</td>
+            <td>More Table Content</td>
+          </tr>
+        </table>
+
+        <aside class="asideImg">
+          <img src="./resources/images/template/aside1.jpg">
+          <h4>H4 - IMG Caption</h4>
+        </aside>
 
         <ul>
-          <li><h3>H3 - List Item 1</h3>
+          <li><h3>H3 - List Item</h3>
             <h4>$3.99 (H4 - PRICE)</h4>
             Item description.
           </li>
-          <li><h3>H3 - List Item 2</h3>
+          <li><h3>H3 - List Item</h3>
             <h4>$3.99 (H4 - PRICE)</h4>
             Item description.
           </li>
-          <li><h3>H3 - List Item 3</h3>
+          <li><h3>H3 - List Item</h3>
+            <h4>$3.99 (H4 - PRICE)</h4>
+            Item description.
+          </li>
+          <li><h3>H3 - List Item</h3>
+            <h4>$3.99 (H4 - PRICE)</h4>
+            Item description.
+          </li>
+          <li><h3>H3 - List Item</h3>
             <h4>$3.99 (H4 - PRICE)</h4>
             Item description.
           </li>
       </section>
     </div>
-    <div class="card side">YO</div>
+
+    <div class="card imgGrid">
+      <div class="imgGrid">
+        <div class="gridItem"><img src="./resources/images/template/cake1.jpg">
+          <h4>1</h4></div>
+        <div class="gridItem"><img src="./resources/images/template/cake2.jpg">
+          <h4>2</h4></div>
+        <div class="gridItem"><img src="./resources/images/template/cake3.jpg">
+          <h4>3</h4></div>
+        <div class="gridItem"><img src="./resources/images/template/cake4.jpg">
+          <h4>4</h4></div>
+        <div class="gridItem"><img src="./resources/images/template/cake5.jpg">
+          <h4>5</h4></div>
+        <div class="gridItem"><img src="./resources/images/template/cake6.jpg">
+          <h4>6</h4></div>
+        <div class="gridItem"><img src="./resources/images/template/cake7.jpg">
+          <h4>7</h4></div>
+        <div class="gridItem"><img src="./resources/images/template/cake8.jpg">
+          <h4>8</h4></div>
+        <div class="gridItem"><img src="./resources/images/template/cake9.jpg">
+          <h4>9</h4></div>
+        <div class="gridItem"><img src="./resources/images/template/cake10.jpeg">
+          <h4>10</h4></div>
+        <div class="gridItem"><img src="./resources/images/template/cake11.jpg">
+          <h4>11</h4></div>
+        <div class="gridItem"><img src="./resources/images/template/cake12.jpg">
+          <h4>12</h4></div>
+      </div>
+    </div>
   </div>
 
 

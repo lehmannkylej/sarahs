@@ -12,7 +12,7 @@ SUPPORTING FILES: N/A
 Last Edited: 4-27-2018
 */
 
-//NAV HAMBURGER MENU
+//NAV HAMBURGER MENU & CLOSE BUTTON
 function navMenu() {
     var x = document.getElementById("nav");
     if (x.className === "nav") {
