@@ -172,7 +172,7 @@ body {
 
 .content,
 .banner {
-  padding: 1.5em;
+  padding: .75em;
   overflow: hidden;
 }
 .banner {
@@ -202,7 +202,7 @@ body {
   z-index: 5;
 }
 .card:not(:first-of-type) {
-  margin-top: 1.5em;
+  margin-top: .75em;
 }
 
 .slideshow {
@@ -276,9 +276,13 @@ footer img {
 
 /* RESPONSIVE LAYOUT */
 @media only screen and (min-width: 46em) {/* 600/16 */
-  div.content,
-  div.banner {
+  .content,
+  .banner {
+    padding: 1.5em;
+  }
 
+  .card:not(:first-of-type) {
+    margin-top: 1.5em;
   }
 
   aside {
@@ -418,9 +422,8 @@ aside figcaption {
 IMAGE STYLES
 ============
 */
-/* BANNER BACKGROUND */
+/* BANNER IMAGES */
 .banner {
-  background-color: var(--gray-dk);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
