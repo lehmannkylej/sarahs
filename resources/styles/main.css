@@ -223,7 +223,7 @@ aside {
   background-color: #000;
   color: #fff;
   padding: 0.75em;
-  display: inline-block;
+  display: block;
   margin: 0;
   width:100%;
   font-family: var(--sans-serif);
@@ -364,6 +364,10 @@ li {
 
 p ~ p {
   margin-top: .75em;
+}
+
+p ~ aside {
+  margin-top: .5em;
 }
 
 article ~ p {
