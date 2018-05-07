@@ -29,10 +29,3 @@ Last Edited: 4-27-2018
   --gray-dk: #687D8C;
   --gray-banner: #313131;
 }
-
-/* GLOBAL DROP SHADOWS */
-:root {
-  --shadow: 0 0.0625em 0.1875em rgba(0,0,0,0.12), 0 0.0625em 0.125em rgba(0,0,0,0.24);
-  --shadow-heavy: 0 0.625em 0.1875em rgba(0,0,0,0.24), 0 0.625em 0.125em rgba(0,0,0,0.48);
-  --invshadow-heavy: 0 -0.0625em 0.1875em rgba(0,0,0,0.24), 0 -0.0625em 0.125em rgba(0,0,0,0.48);
-}

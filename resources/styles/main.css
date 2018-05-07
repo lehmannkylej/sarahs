@@ -9,8 +9,10 @@ Created: 4-23-2018
 Filename: main.css
 SUPPORTING FILES
     CSS: resources.css
+    Images: logo-simple.svg, logo-fb.svg, logo-ig.svg
+            banner.jpg (for each page)
 
-Last Edited: 4-27-2018
+Last Edited: 5-7-2018
 
 =============
 COMPATIBILITY
@@ -293,7 +295,7 @@ footer img {
     margin: .5em 0 0.5em 1em;
   }
 
-  aside figcaption {
+  aside h5 {
     font-size: .75em;
   }
 
@@ -427,19 +429,20 @@ address {
     font-weight: normal;
 }
 
-figcaption {
+h5 {
   width: 100%;
   font-family: var(--serif);
   font-weight: bold;
   font-size: 1em;
   text-align: center;
+  margin: 0;
 }
 
-aside figcaption {
+aside h5 {
   margin: 0 .25em .25em;
 }
 
-.slideshow figcaption {
+.slideshow h5 {
   margin: .5em .25em 0 .25em;
 }
 

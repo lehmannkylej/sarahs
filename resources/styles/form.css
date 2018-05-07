@@ -28,7 +28,7 @@ input[type=submit] {
 
 /* LABEL & TITLE STYLES */
 form p {
-  font-size: 1em; /* 14/16 */
+  font-size: 1em;
   width: 100%;
   text-align: center;
   padding: .25em 0 1.25em;
@@ -37,7 +37,7 @@ form p {
 
 label {
   display: inline-block;
-  font-size: 1em; /* 16/16 */
+  font-size: 1em;
   font-family: var(--serif);
   font-weight: bold;
 }
