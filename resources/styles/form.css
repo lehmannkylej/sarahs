@@ -42,6 +42,10 @@ label {
   font-weight: bold;
 }
 
+label#newsletter {
+  margin-top: 1em;
+}
+
 #subject label:not(:first-of-type) {
   margin-top: 1.25em;
 }
@@ -157,21 +161,46 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   background: none;
 }
 
-/* RADIO INPUT STYLES */
+/* RADIO & CHECKBOX INPUT STYLES */
+input[type=checkbox] {
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 0.125em solid var(--pink-dk);
+  height: 1.125em;
+  width: 1.125em;
+  border-radius: .25em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.25em;
+}
 #subject input {
   -webkit-appearance: none;
 	background-color: #fff;
-	border: 0.125em solid var(--pink-dk); /* 2/16 */
-  height: 1.125em; /* 18/16 */
-  width: 1.125em; /* 18/16 */
+	border: 0.125em solid var(--pink-dk);
+  height: 1.125em;
+  width: 1.125em;
 	border-radius: 50%;
 	display: inline-block;
 	vertical-align: middle;
-  margin-top: -0.25em; /* 4/16 */
+  margin-top: -0.25em;
 }
 
-#subject input:hover {
+
+#subject input:hover,
+input[type=checkbox]:hover {
   background-color: var(--pink-md);
+}
+
+input[type=checkbox]:checked {
+  background-color: var(--pink-dk);
+  border-color: var(--pink-dk);
+}
+
+input[type=checkbox]:checked:after {
+	display: block;
+	content: '\2714';
+  margin: -0.0625em 0 0 0.0625em;
+  color: #fff;
 }
 
 #subject input:checked {

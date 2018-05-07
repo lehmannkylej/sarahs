@@ -71,8 +71,9 @@ header img {
 nav {
   padding: .5em;
   background-color: var(--pink-lt);
-  position: relative;
-  z-index: 6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   box-shadow: 0 0.0625em 0.1875em rgba(0,0,0,0.12), 0 0.0625em 0.125em rgba(0,0,0,0.24);
 }
 
@@ -614,14 +615,12 @@ input[type=submit]:hover {
 
 .contactbtn {
   display: block;
+  width: 100%;
+  margin: 1.5em auto 0;
   text-align: center;
-  margin-top: 1.5em;
 }
 
 /* AUDIO STYLES */
-#audioReview {
-  margin-top: 3em;
-}
 #audioReview audio {
   display: block;
   width: 100%;
