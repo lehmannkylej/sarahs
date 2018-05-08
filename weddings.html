@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<!--
+SARAH'S CAKE SHOP
+Weddings
+
+Kyle Lehmann
+lehmannkylej@gmail.com
+Created: 4-23-2018
+
+Filename: weddings.html
+SUPPORTING FILES
+    HTML: index.html, cupcakes.html, cakes.html,
+          contact.html, about.html
+    CSS: main.css, normalize.css
+    Images: logo-cakeshop.svg, logo-fb.svg, logo-ig.svg
+            slide(1-2).jpg, cake(1-8).jpg
+    JS: main.js, slideshow.js
+Last Edited: 5-7-2018
+-->
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Weddings</title>
+
+  <!-- SITE FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./resources/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="./resources/images/icons/site.webmanifest">
+  <link rel="mask-icon" href="./resources/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./resources/images/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./resources/images/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- STYLESHEETS -->
+  <link href="./resources/styles/normalize.css" rel="stylesheet" type="text/css" />
+  <link href="./resources/styles/resources.css" rel="stylesheet" type="text/css" />
+  <link href="./resources/styles/main.css" rel="stylesheet" type="text/css" />
+
+  <!-- JAVASCRIPT -->
+  <script src="./resources/scripts/main.js"></script>
+</head>
+
+<body>
+
+  <header id="header" class="noSelect fitToParent">
+    <img src="resources/images/logo-cakeshop.svg" alt="Sarah's">
+  </header>
+
+  <nav id="nav" class="nav noSelect fitToParent">
+    <a id="location" href="index.html">CHESTERFIELD, MO</a>
+    <div class="navLinks">
+      <a href="index.html">Home</a>
+      <a href="cupcakes.html">Cupcakes</a>
+      <a href="cakes.html">Cakes</a>
+      <a class="active" href="weddings.html">Weddings</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="about.html">About Us</a>
+      <a href="javascript:void(0);" class="close" onclick="navMenu()" >&#10006;&#xFE0E;</a>
+      <a href="javascript:void(0);" class="hamburger" onclick="navMenu()">&#9776;</a>
+    </div>
+  </nav>
+
+  <div class="banner fitToParent" id="weddingsBanner">
+    <div class="card fitToParent">
+      <h1>Wedding Cakes and Desserts</h1>
+      <section>
+        <p>Sarah’s Cake Shop strives to create the perfect wedding cake that captures each bride’s individual personality. From whimsical to simple and elegant, each cake portrays the quality that is as unique as the bride who chooses it.</p>
+        <p>Wedding cake consultations and tastings are by appointment only. For wedding information only, please email/call our Wedding Coordinator or fill out our contact form.</p>
+      </section>
+      <section>
+        <h2>Sarah Como</h2>
+        <h3 class="jobTitle">Wedding Coordinator</h3>
+        <h4 class="jobLabel">Work Email</h4>
+        <a class="jobContact" href="email:sarah-como@att.net">sarah-como@att.net</a>
+        <h4 class="jobLabel">Work Number</h4>
+        <a class="jobContact" href="tel:+1-314-295-1198">(314) 295-1198</a>
+
+        <form action="contact.html#contactform" class="contactbtn">
+          <input type="submit" value="FILL OUT OUR CONTACT FORM" />
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <div class="content fitToParent">
+    <div class="card slideshow fitToParent">
+      <div class="slide fitToParent">
+        <img class="fitToParent" src="./resources/images/weddings/slide1.jpg" alt="Cake Image">
+        <h5>1 of 2</h5>
+      </div>
+
+      <div class="slide fitToParent">
+        <img class="fitToParent" src="./resources/images/weddings/slide2.jpg" alt="Cake Image">
+        <h5>2 of 2</h5>
+      </div>
+    </div>
+
+    <div class="card fitToParent">
+      <section>
+        <h2>Pricing</h2>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Price Per Serving</th>
+          </tr>
+          <tr>
+            <td><h3>Classic Cake Flavors</h3></td>
+            <td>$3.25</td>
+          </tr>
+            <td><h3>Specialty Cake Flavors</h3></td>
+            <td>$3.50</td>
+          </tr>
+          <tr>
+            <td><h3>Flavored Buttercream</h3></td>
+            <td>$.25 and up</td>
+          </tr>
+            <td><h3>Specialty Fillings</h3></td>
+            <td>$.50</td>
+          </tr>
+          <tr>
+            <td><h3>Kitchen Cakes</h3></td>
+            <td>$1.75 and up</td>
+          </tr>
+            <td><h3>Fondant Cover</h3></td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td><h3>Deposit</h3></td>
+            <td>$75.00 NON-REFUNDABLE</td>
+          </tr>
+            <td><h3>Delivery</h3></td>
+            <td>Starts at $60</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Flavors</h2>
+        <p>Our wedding cakes are 3-layers of cake, 2 layers of filling, and 5” tall. Your cake base price includes a Classic Cake Flavor paired with traditional, vanilla or chocolate buttercream. Other flavors and fillings are an additonal charge.</p>
+        <table>
+          <tr>
+            <th>Cake Flavors</th>
+            <th>Fillings</th>
+          </tr>
+          <tr>
+            <td><h3>Classic Flavors</h3>
+                Chocolate<br />Yellow<br />White<br />Almond<br />Marble</td>
+
+            <td><h3>Flavored Buttercream</h3>
+                Brown Butter<br />Caramel<br />Chocolate<br />Champagne<br />Lemon<br />Mocha<br />Traditional<br />Vanilla</td>
+          </tr>
+          <tr>
+            <td><h3>Specialty Cake Flavors</h3>
+              Apple<br />Banana<br />Caramel<br />Carrot<br />Lemon<br />Pumpkin Spice<br />Red Velvet<br />Strawberry<br />Vanilla Bean</td>
+
+            <td><h3>Specialty Fillings</h3>
+              Cream Cheese<br />Dark Chocolate Mousse<br />Ganache<br />Lemon Cream<br />Peanut Butter Mousse<br />Raspberry Jam<br />Strawberry Jam<br />White Chocolate Mousse</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+
+    <div class="card imgGrid noSelect fitToParent">
+      <h2>Some Of Our Favorite Wedding Cakes</h2>
+      <div class="imgGrid fitToParent">
+        <div class="gridItem">
+          <h5>1</h5>
+          <img src="./resources/images/weddings/cake1.jpg" alt="Cake Image">
+        </div>
+        <div class="gridItem">
+          <h5>2</h5>
+          <img src="./resources/images/weddings/cake2.jpg" alt="Cake Image">
+        </div>
+        <div class="gridItem">
+          <h5>3</h5>
+          <img src="./resources/images/weddings/cake3.jpg" alt="Cake Image">
+        </div>
+        <div class="gridItem">
+          <h5>4</h5>
+          <img src="./resources/images/weddings/cake4.jpg" alt="Cake Image">
+        </div>
+        <div class="gridItem">
+          <h5>5</h5>
+          <img src="./resources/images/weddings/cake5.jpg" alt="Cake Image">
+        </div>
+        <div class="gridItem">
+          <h5>6</h5>
+          <img src="./resources/images/weddings/cake6.jpg" alt="Cake Image">
+        </div>
+        <div class="gridItem">
+          <h5>7</h5>
+          <img src="./resources/images/weddings/cake7.jpg" alt="Cake Image">
+        </div>
+        <div class="gridItem">
+          <h5>8</h5>
+          <img src="./resources/images/weddings/cake8.jpg" alt="Cake Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="fitToParent">
+    <address>
+      Sarah's Cake Shop<br />
+      110 Clarkson Wilson Centre<br />
+      Chesterfield, MO 63017<br />
+    </address>
+    <a href="tel:+1-636-728-1140">(636) 728-1140</a><br />
+
+    <a href="https://www.facebook.com/celebratewithsarahs/p">
+    <img src="./resources/images/icon-fb.svg" alt="FACEBOOK PAGE">
+    </a>
+    <a href="http://www.instagram.com/sarahscakeshop/">
+    <img src="./resources/images/icon-ig.svg" alt="INSTAGRAM PAGE">
+    </a><br />
+
+    <span class="copyright">
+      &copy;
+      <script>currentYear();</script>
+      Sarah's Cake Shop &#8226; All Rights Reserved
+    </span>
+  </footer>
+
+  <script src="./resources/scripts/slideshow.js"></script>
+</body>
+
+</html>

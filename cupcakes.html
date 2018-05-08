@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<!--
+SARAH'S CAKE SHOP
+Cupcakes
+
+Kyle Lehmann
+lehmannkylej@gmail.com
+Created: 4-23-2018
+
+Filename: cupcakes.html
+SUPPORTING FILES
+    HTML: index.html, cakes.html, weddings.html,
+          contact.html, about.html
+    CSS: main.css, normalize.css
+    Images: logo-cakeshop.svg, logo-fb.svg, logo-ig.svg
+            cupcakes(1-8).jpg
+    JS: main.js
+Last Edited: 5-7-2018
+-->
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Cupcakes</title>
+
+  <!-- SITE FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./resources/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="./resources/images/icons/site.webmanifest">
+  <link rel="mask-icon" href="./resources/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./resources/images/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./resources/images/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- STYLESHEETS -->
+  <link href="./resources/styles/normalize.css" rel="stylesheet" type="text/css" />
+  <link href="./resources/styles/resources.css" rel="stylesheet" type="text/css" />
+  <link href="./resources/styles/main.css" rel="stylesheet" type="text/css" />
+
+  <!-- JAVASCRIPT -->
+  <script src="./resources/scripts/main.js"></script>
+</head>
+
+<body class="fitToParent">
+
+  <header id="header" class="noSelect fitToParent">
+    <img src="./resources/images/logo-cakeshop.svg"  alt="Sarah's">
+  </header>
+
+  <nav id="nav" class="nav noSelect fitToParent">
+    <a id="location" href="index.html">CHESTERFIELD, MO</a>
+    <div class="navLinks">
+      <a href="index.html">Home</a>
+      <a class="active" href="cupcakes.html">Cupcakes</a>
+      <a href="cakes.html">Cakes</a>
+      <a href="weddings.html">Weddings</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="about.html">About Us</a>
+      <a href="javascript:void(0);" class="close" onclick="navMenu()" >&#10006;&#xFE0E;</a>
+      <a href="javascript:void(0);" class="hamburger" onclick="navMenu()">&#9776;</a>
+    </div>
+  </nav>
+
+  <div id="cupcakesBanner" class="banner fitToParent">
+    <div class="card fitToParent">
+
+      <h1>CUPCAKES</h1>
+      <p>Sarah’s offers a variety of Classic Flavors available daily as well as Specialty Flavors available each day of the week in shop. We also offer customized orders to help you bring your creations to life!</p>
+      <p>If you have questions about custom order pricing, don't hesitate to contact us for more info!</p>
+      <form action="contact.html#contactform" class="contactbtn">
+        <input type="submit" value="FILL OUT OUR CONTACT FORM" />
+      </form>
+    </div>
+  </div>
+
+  <div class="content fitToParent">
+
+    <div class="card fitToParent">
+      <section>
+        <h2>Specialty Cupcakes</h2>
+        <p>When ordering from our daily rotating menu, please choose from the cupcakes available the day you are picking up your order.</p>
+        <p>Cupcakes can be ordered in any combonation and amount from the Classic Flavors and the Daily Flavors available on your order pick up day. Flavors from a different day can be ordered for a minimum of 1 dozen or more.</p>
+      </section>
+
+      <section>
+        <h2>Classic Flavors</h2>
+        <aside class="asideImg fitToParent">
+          <img src="./resources/images/cupcakes/cupcakes-aside1.jpeg" alt="Cupcake Image">
+          <h5>Triple Chocolate and Red Velvet</h5>
+        </aside>
+        <ul>
+          <li><h3>Snack Cake</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Dark chocolate cake filled with our sweet decorators frosting, topped with vanilla buttercream and dipped in ganache. Our best seller.
+          </li>
+          <li><h3>Red Velvet</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Moist buttermilk cake topped with sweet cream cheese frosting.
+          </li>
+          <li><h3>Vanilla Cream</h3>
+            <h4>$2.50/each, $30.00/dozen</h4>
+            Our classic yellow cake topped with a vanilla buttercream rosette.
+          </li>
+          <li><h3>Triple Chocolate</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Our double chocolate cake topped with a dollop of chocolate frosting and a swirl of chocolate buttercream.
+          </li>
+          <li><h3>Daily Design</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Chocolate or yellow cake topped with our sweet decorators frosting in a fun design.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Tuesday Flavors</h2>
+        <ul>
+          <li><h3>Salted Caramel</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Caramel cake brushed with caramel, topped with caramel buttercream with & sprinkled with sea salt.
+          </li>
+          <li><h3>Chocolate Toffee</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Chocolate cake studded with toffee bits and iced in chocolate buttercream.
+          </li>
+          <li><h3>Strawberry Cheesecake</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Strawberry cake topped with cheesecake icing and sprinkled with graham cracker crumbs.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Wednesday Flavors</h2>
+        <ul>
+          <li><h3>Carrot Cake</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Our classic carrot cake iced with cream cheese frosting.
+          </li>
+          <li><h3>Date Night</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Almond cake filled with chocolate ganache and topped with strawberry buttercream.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Thursday Flavors</h2>
+        <ul>
+          <li><h3>Billionaire</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Caramel cake, filled with cookie dough, brushed with caramel, topped with chocolate buttercream, abd dirzzled with caramel and ganache.
+          </li>
+          <li><h3>Lemon Cream</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Lemon cake topped with lemon buttercream.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Friday Flavors</h2>
+        <ul>
+          <li><h3>Salted Caramel</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            White cake speckled with rainbow sprinkles, iced in white chocolate buttercream, and adorned with rainbow sprinkles like the childhood favorite.
+          </li>
+          <li><h3>Date Night</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Almond cake filled with chocolate ganache and topped with strawberry buttercream.
+          </li>
+          <li><h3>Boozy Bites</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Fun mini cupcakes spiked with alcohol! Flavors change weekly.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Saturday Flavors</h2>
+        <ul>
+          <li><h3>Carrot Cake</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Our classic carrot cake iced with cream cheese frosting.
+          </li>
+          <li><h3>Cinnamon Roll</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Cinnamon & spice-swirled white velvet cake, brushed with sweet cream, and iced in a spice-striped swirl of cream cheese frosting.
+          </li>
+          <li><h3>Texas Sheetcake</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Chocolate buttermilk cake filled with caramel-cocoa sauce, iced in caramel buttercream, drizzled in caramel-cocoa sauce, and sprinkled with salted pecans.
+          </li>
+          <li><h3>Everyday Wedding Cake</h3>
+            <h4>$2.75/each, $33.00/dozen</h4>
+            Almond cake iced with our traditional almond buttercream icing.
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="card fitToParent">
+      <h2>Custom Cupcakes</h2>
+      <section>
+        <article>
+          <p>Prices vary for custom designed cupcakes. This depends on the flavors and decoratin you choose.</p>
+          <p>Whether you’re hosting a birthday party, arranging a company function or planning a wedding, you can trust our experienced staff to provide you with desserts that you and your guests will never forget.</p>
+          <aside class="fitToParent">If you are looking to place a custom order, please contact us for more information and pricing.</aside>
+        </article>
+        <ul>
+          <li><h3>Basic Buttercream Swirl</h3>
+            <h4>$2.25/each, $27.00/dozen</h4>
+            Our basic cupcake is available in yellow, chocolate or white cake topped with a swirl of buttercream.
+          </li>
+          <li><h3>Mini Specialty Flavors</h3>
+            <h4>$1.50 - $.175/each, 1 DOZEN MINIMUM</h4>
+            A smaller version of our classic or specialty cupcakes. Available by order.
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="card imgGrid noSelect fitToParent">
+      <h2>Some Of Our Favorite Custom Cupcakes</h2>
+      <div class="imgGrid fitToParent">
+        <div class="gridItem">
+          <h5>1</h5>
+          <img src="./resources/images/cupcakes/cupcake1.jpg" alt="Cupcake Image">
+        </div>
+        <div class="gridItem">
+          <h5>2</h5>
+          <img src="./resources/images/cupcakes/cupcake2.jpg" alt="Cupcake Image">
+        </div>
+        <div class="gridItem">
+          <h5>3</h5>
+          <img src="./resources/images/cupcakes/cupcake3.jpg" alt="Cupcake Image">
+        </div>
+        <div class="gridItem">
+          <h5>4</h5>
+          <img src="./resources/images/cupcakes/cupcake4.jpg" alt="Cupcake Image">
+        </div>
+        <div class="gridItem">
+          <h5>5</h5>
+          <img src="./resources/images/cupcakes/cupcake5.jpg" alt="Cupcake Image">
+        </div>
+        <div class="gridItem">
+          <h5>6</h5>
+          <img src="./resources/images/cupcakes/cupcake6.jpg" alt="Cupcake Image">
+        </div>
+        <div class="gridItem">
+          <h5>7</h5>
+          <img src="./resources/images/cupcakes/cupcake7.jpg" alt="Cupcake Image">
+        </div>
+        <div class="gridItem">
+          <h5>8</h5>
+          <img src="./resources/images/cupcakes/cupcake8.jpg" alt="Cupcake Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="fitToParent">
+    <address>
+      Sarah's Cake Shop<br />
+      110 Clarkson Wilson Centre<br />
+      Chesterfield, MO 63017<br />
+    </address>
+    <a href="tel:+1-636-728-1140">(636) 728-1140</a><br />
+
+    <a href="https://www.facebook.com/celebratewithsarahs/p">
+    <img src="./resources/images/icon-fb.svg" alt="FACEBOOK PAGE">
+    </a>
+    <a href="http://www.instagram.com/sarahscakeshop/">
+    <img src="./resources/images/icon-ig.svg" alt="INSTAGRAM PAGE">
+    </a><br />
+
+    <span class="copyright">
+      &copy;
+      <script>currentYear();</script>
+      Sarah's Cake Shop &#8226; All Rights Reserved
+    </span>
+  </footer>
+
+</body>
+
+</html>
