@@ -1,0 +1,183 @@
+/*
+SARAH'S CAKE SHOP
+Global Stylesheet
+
+Kyle Lehmann
+lehmannkylej@gmail.com
+Created: 4-23-2018
+*/
+/* GLOBAL FONTS */
+@import url('https://fonts.googleapis.com/css?family=Quattrocento|Oswald');
+:root {
+  --serif: 'Quattrocento', serif;
+  --sans-serif: 'Oswald', sans-serif;
+}
+
+/* GLOBAL COLORS */
+:root {
+  --pink-lt: #FFE1EB;
+  --pink-md: #E3B5D4;
+  --pink-dk: #CC5987;
+  --gray-lt: #C8CFD7;
+  --gray-dk: #687D8C;
+  --gray-banner: #313131;
+}
+
+/* NEGATIVE SHADOWS */
+.shadow-neg-sm {
+  box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.shadow-neg {
+  box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.shadow-neg-lg {
+  box-shadow: 0 -1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* REMOVE BROWSER FOCUS */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/*
+================
+BODY & STRCUTURE
+================
+*/
+.container-fluid {
+  padding: 0;
+}
+
+/* BANNER */
+.banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* MAIN & MAIN GRID */
+.main {
+  background-color: var(--gray-lt);
+}
+
+.main .row {
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .row .p-2 {
+    padding: 0 !important;
+  }
+
+}
+
+/* CARDS */
+.card {
+  width: 100%;
+  max-width: 44rem;
+  border: none;
+  padding: 2rem;
+  margin: .25rem;
+}
+
+.banner .card {
+  margin: 0 auto;
+}
+
+
+/*
+====
+TEXT
+====
+*/
+/* HEADERS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--sans-serif);
+  font-weight: normal;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+  border: none;
+}
+
+
+/*
+================================
+IMAGES & IMG CONTAINERS/CAPTIONS
+================================
+*/
+/* CAROUSEL */
+.carousel-inner {
+  border-radius: 0.25rem;
+}
+
+.carousel-caption {
+  text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.card-carousel {
+  padding: .5rem;
+}
+
+/*
+===============
+NAVBAR & HEADER
+===============
+*/
+/* HEADER */
+header img {
+  height: 100px;
+  margin: 6px auto;
+  display: block;
+}
+
+/* NAVBAR */
+.navbar {
+  font-family: var(--sans-serif);
+  font-size: 1.125rem;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.nav-pills>li+li {
+  margin-left: 12px;
+}
+
+.nav-link {
+  padding: .5rem;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0;
+  border: none;
+}
+
+/* NAV DROPDOWN */
+.navbar .dropdown-menu {
+  padding: .75rem 0;
+  text-align: center;
+}
+.navbar .dropdown-toggle {
+  text-transform: uppercase;
+}
+
+.navbar .dropdown-header {
+  padding: .75rem 1.5rem .1rem;
+  margin-bottom: 0;
+  font-size: 0.973rem;
+  color: var(--gray-dk);
+}
+
+.navbar .dropdown-menu .dropdown-header:first-of-type {
+  padding-top: 0;
+}
+
+.navbar .dropdown-item {
+  font-size: 1.125rem;
+}
