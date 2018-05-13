@@ -12,6 +12,10 @@ Created: 4-23-2018
 NAVBAR & HEADER
 ===============
 */
+/* HEADER */
+header {
+  background-color: white;
+}
 
 /* NAVBAR */
 .navbar-light {

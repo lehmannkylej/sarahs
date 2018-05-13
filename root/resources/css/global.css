@@ -6,6 +6,11 @@ Kyle Lehmann
 lehmannkylej@gmail.com
 Created: 4-23-2018
 */
+/*
+=========
+RESOURCES
+=========
+*/
 /* GLOBAL FONTS */
 @import url('https://fonts.googleapis.com/css?family=Quattrocento|Oswald');
 :root {
@@ -23,6 +28,32 @@ Created: 4-23-2018
   --gray-banner: #313131;
 }
 
+
+/*
+========
+SETTINGS
+========
+*/
+/* REMOVE BROWSER FOCUS */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+
+/*
+===============
+CONTENT STYLING
+===============
+*/
+/* HORIZONTAL CENTER */
+.m-justify-center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 /* NEGATIVE SHADOWS */
 .shadow-neg-sm {
   box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
@@ -34,21 +65,24 @@ Created: 4-23-2018
   box-shadow: 0 -1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
-/* REMOVE BROWSER FOCUS */
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-}
 
 /*
 ================
 BODY & STRCUTURE
 ================
 */
-.container-fluid {
-  padding: 0;
+/* GRID */
+.col-lg-6 {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .main .row .col-lg-6:nth-child(odd) {
+    padding-right: 1rem;
+  }
+  .main. .row .col-lg-6:nth-child(even) {
+    padding-left: 1rem !important;
+  }
 }
 
 /* BANNER */
@@ -56,6 +90,7 @@ BODY & STRCUTURE
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-height: 24rem;
 }
 
 /* MAIN & MAIN GRID */
@@ -63,28 +98,11 @@ BODY & STRCUTURE
   background-color: var(--gray-lt);
 }
 
-.main .row {
-  margin: 0 auto;
-}
-
-@media (max-width: 991px) {
-  .row .p-2 {
-    padding: 0 !important;
-  }
-
-}
-
 /* CARDS */
 .card {
   width: 100%;
   max-width: 44rem;
   border: none;
-  padding: 2rem;
-  margin: .25rem;
-}
-
-.banner .card {
-  margin: 0 auto;
 }
 
 
@@ -111,17 +129,16 @@ IMAGES & IMG CONTAINERS/CAPTIONS
 ================================
 */
 /* CAROUSEL */
-.carousel-inner {
-  border-radius: 0.25rem;
+.carousel-inner img {
+  max-height: 40rem;
+  max-width: 50%;
+  margin: auto;
+  vertical-align: middle;
 }
-
 .carousel-caption {
   text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
-.card-carousel {
-  padding: .5rem;
-}
 
 /*
 ===============
